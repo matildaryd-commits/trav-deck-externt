@@ -1091,11 +1091,12 @@
   function navigate(dir) {
     const next = current + dir;
     if (next < 0 || next >= total) return;
-    slides[current].classList.remove('active');
-    slides[current].classList.add(dir > 0 ? 'exit-left' : '');
+    const prev = current;
+    slides[prev].classList.remove('active');
+    if (dir > 0) slides[prev].classList.add('exit-left');
+    current = next;
     setTimeout(() => {
-      slides[current].classList.remove('exit-left');
-      current = next;
+      slides[prev].classList.remove('exit-left');
       slides[current].classList.add('active');
       counter.textContent = (current + 1) + '/' + total;
     }, 50);
