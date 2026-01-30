@@ -389,8 +389,8 @@
     }
 
     .phone-frame {
-      width: 260px;
-      height: 520px;
+      width: 200px;
+      height: 400px;
       background: #1A1A1A;
       border-radius: 36px;
       padding: 12px;
@@ -577,6 +577,24 @@
     .ring-label.lbl-mid { bottom: calc(50% + 108px); }
     .ring-label.lbl-outer { bottom: calc(50% + 158px); }
 
+    /* Demo button */
+    .demo-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #1A1A1A;
+      color: white;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .demo-btn:hover { background: #333; }
+    .demo-btn svg { flex-shrink: 0; }
+
     /* CTA slide */
     .cta-content {
       text-align: center;
@@ -638,13 +656,13 @@
   <div class="slide active" data-index="0">
     <div class="card" style="justify-content: center; align-items: center; text-align: center;">
       <div class="subtitle">Januari 2026</div>
-      <h1 style="max-width: 760px;">Vi kopplar ihop alla<br>runt hästen.</h1>
+      <h1 style="max-width: 760px;">Vi samlar stallet.</h1>
       <p class="large" style="text-align: center; max-width: 580px;">
-        Travsporten har allt: passion, gemenskap och tradition. Men tränare drunknar i admin, ägare saknar kontakt och nya intressenter hittar inte in. Vi bygger plattformen som samlar stallet, engagerar ägarna och öppnar dörren för fler.
+        Travsporten har allt: passion, gemenskap och tradition. Men stallvardagen är onödigt krånglig och många ägare kommer inte riktigt nära. Vi bygger plattformen som samlar stallet, stärker relationerna och låter fler vara med.
       </p>
       <div style="margin-top: 28px;">
         <span class="pill">CRM för tränare</span>
-        <span class="pill outline">App för ägare</span>
+        <span class="pill outline">App &amp; Marketplace</span>
       </div>
       <div class="footer">
         <span>Januari 2026</span>
@@ -654,54 +672,8 @@
     </div>
   </div>
 
-  <!-- SLIDE 2: Agenda -->
+  <!-- SLIDE 2: Problem overview -->
   <div class="slide" data-index="1">
-    <div class="card card-top">
-      <h2>Agenda</h2>
-      <div class="agenda-grid">
-        <div class="agenda-item">
-          <span class="agenda-num">1.</span>
-          <span class="agenda-text">Problemet i travsporten idag</span>
-        </div>
-        <div class="agenda-item">
-          <span class="agenda-num">5.</span>
-          <span class="agenda-text">CRM:et, för tränaren</span>
-        </div>
-        <div class="agenda-item">
-          <span class="agenda-num">2.</span>
-          <span class="agenda-text">Tränarens vardag</span>
-        </div>
-        <div class="agenda-item">
-          <span class="agenda-num">6.</span>
-          <span class="agenda-text">Ägarappen, för ägaren</span>
-        </div>
-        <div class="agenda-item">
-          <span class="agenda-num">3.</span>
-          <span class="agenda-text">Ägaren och det dolda nätverket</span>
-        </div>
-        <div class="agenda-item">
-          <span class="agenda-num">7.</span>
-          <span class="agenda-text">Ekosystemet och nätverket</span>
-        </div>
-        <div class="agenda-item">
-          <span class="agenda-num">4.</span>
-          <span class="agenda-text">Vår lösning, två produkter</span>
-        </div>
-        <div class="agenda-item">
-          <span class="agenda-num">8.</span>
-          <span class="agenda-text">Affärsmodell och nästa steg</span>
-        </div>
-      </div>
-      <div class="footer">
-        <span>Januari 2026</span>
-        <span></span>
-        <span>Konfidentiellt</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE 3: Problem overview -->
-  <div class="slide" data-index="2">
     <div class="card card-top">
       <div class="subtitle">Problemet</div>
       <h2>Personliga relationer är sportens styrka.<br>Men hur skalar man det i en ny verklighet?</h2>
@@ -736,7 +708,7 @@
   </div>
 
   <!-- SLIDE 4: Trainer's reality -->
-  <div class="slide" data-index="3">
+  <div class="slide" data-index="2">
     <div class="card">
       <div class="two-col-narrow">
         <div>
@@ -779,13 +751,13 @@
   </div>
 
   <!-- SLIDE 5: Owners & hidden network -->
-  <div class="slide" data-index="4">
+  <div class="slide" data-index="3">
     <div class="card">
       <div class="two-col-narrow">
         <div>
           <div class="subtitle">Ägaren och nätverket</div>
-          <h2>Andelshästar är inte<br>ett problem. Det är en tillgång.</h2>
-          <p class="large">
+          <h2>Andelshästar är inte<br>ett problem. De är en tillgång.</h2>
+          <p class="large" style="margin-bottom: 20px;">
             Många tränare ser andelshästar som administrativt krångel. Men varje delägare har ett eget nätverk. Det som upplevs som en börda är i verkligheten en tillväxtmotor för stallet och hela sporten.
           </p>
           <ul class="features">
@@ -821,7 +793,7 @@
   </div>
 
   <!-- SLIDE 6: Solution overview -->
-  <div class="slide" data-index="5">
+  <div class="slide" data-index="4">
     <div class="card card-top">
       <div class="subtitle">Vår lösning</div>
       <h2>Avlastar tränaren. Utvecklar teamet.<br>Gör ägandet levande.</h2>
@@ -843,7 +815,7 @@
         </div>
         <div class="product-box">
           <div class="product-icon light">&#128241;</div>
-          <h3>Ägarappen</h3>
+          <h3>App &amp; Marketplace</h3>
           <div class="target">För ägare, delägare och fans</div>
           <ul class="features">
             <li>Realtidsflöde med stallnyheter, träning och lopp</li>
@@ -863,7 +835,7 @@
   </div>
 
   <!-- SLIDE 7: CRM deep-dive with device mockup -->
-  <div class="slide" data-index="6">
+  <div class="slide" data-index="5">
     <div class="card card-top">
       <div class="subtitle">Produkt, CRM</div>
       <h2>Frigör tid för det som faktiskt skapar värde.</h2>
@@ -882,13 +854,17 @@
             <p>Skötarnoteringar, puls och känsla. Allt samlat.</p>
           </div>
         </div>
-        <div style="display: flex; flex-direction: column; align-items: center;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
           <div class="desktop-frame">
             <div class="desktop-screen">
               <img src="screenshots/crm-leads.png" alt="CRM Leads-pipeline" />
             </div>
           </div>
           <div class="desktop-base"></div>
+          <a href="https://harness-crm.vercel.app/" target="_blank" class="demo-btn" style="margin-top: 4px;">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Se live demo — CRM
+          </a>
         </div>
         <div class="callouts-right">
           <div class="callout">
@@ -914,9 +890,9 @@
   </div>
 
   <!-- SLIDE 8: Owner app deep-dive with device mockup -->
-  <div class="slide" data-index="7">
+  <div class="slide" data-index="6">
     <div class="card card-top">
-      <div class="subtitle">Produkt, Ägarappen</div>
+      <div class="subtitle">Produkt, App &amp; Marketplace</div>
       <h2>Äger du 5% ska du ändå känna dig som en del av teamet.</h2>
       <div class="device-showcase">
         <div class="callouts-left">
@@ -933,11 +909,17 @@
             <p>Hitta häst eller delägare. Jämför möjligheter och kostnader.</p>
           </div>
         </div>
-        <div class="phone-frame">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <img src="screenshots/app-home.png" alt="Ägarappen hem-flöde" />
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="screenshots/app-home.png" alt="App — Hitta häst" />
+            </div>
           </div>
+          <a href="https://harness-racing-eta.vercel.app/" target="_blank" class="demo-btn" style="margin-top: 0;">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Se live demo — App
+          </a>
         </div>
         <div class="callouts-right">
           <div class="callout">
@@ -963,7 +945,7 @@
   </div>
 
   <!-- SLIDE 9: Ecosystem / flywheel -->
-  <div class="slide" data-index="8">
+  <div class="slide" data-index="7">
     <div class="card card-top">
       <div class="subtitle">Ekosystemet</div>
       <h2>Andelar x Nätverk = Tillväxt.</h2>
@@ -994,7 +976,7 @@
   </div>
 
   <!-- SLIDE 10: Network effect with visual rings -->
-  <div class="slide" data-index="9">
+  <div class="slide" data-index="8">
     <div class="card">
       <div class="two-col">
         <div>
@@ -1029,7 +1011,7 @@
   </div>
 
   <!-- SLIDE 11: Business model -->
-  <div class="slide" data-index="10">
+  <div class="slide" data-index="9">
     <div class="card">
       <div class="subtitle">Affärsmodell</div>
       <h2>Billigt för små. Prisvärt för stora.<br>Ingen stor kostnadskostym.</h2>
@@ -1044,7 +1026,7 @@
           </ul>
         </div>
         <div>
-          <h3>Ägarappen</h3>
+          <h3>App &amp; Marketplace</h3>
           <ul class="features">
             <li><strong>Gratis för ägare.</strong> Ingen friktion. Ägarna är distributionskanalen.</li>
             <li><strong>Branschsamarbeten:</strong> Subtila, relevanta annonsintäkter, t.ex. Agria, utrustning</li>
@@ -1066,7 +1048,7 @@
   </div>
 
   <!-- SLIDE 12: Next steps / CTA -->
-  <div class="slide" data-index="11">
+  <div class="slide" data-index="10">
     <div class="card" style="justify-content: center; align-items: center;">
       <div class="cta-content">
         <div class="subtitle">Nästa steg</div>
@@ -1096,7 +1078,7 @@
 <!-- Navigation - right side -->
 <div class="nav">
   <button id="prev" onclick="navigate(-1)">&#8593;</button>
-  <span class="counter" id="counter">1/12</span>
+  <span class="counter" id="counter">1/11</span>
   <button id="next" onclick="navigate(1)">&#8595;</button>
 </div>
 
